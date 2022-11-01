@@ -23,34 +23,33 @@ const contactus = () => {
             <div className={Style.contactus_box_box_left_item}>
               <h3>🗺 ADDRESS</h3>
               <p>
-              I resides in Denver, Colorado, United States of America. Connect with me.
-
-
+                Photo booth tattooed prism, portland taiyaki hoodie neutra
+                typewriter
               </p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>💌 EMAIL</h3>
-              <p>gondots@paytusker.com</p>
+              <p>nc.example@example.com</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>☎ PHONE</h3>
-              <p>+1 (303) 506 0241</p>
+              <p>000-123-456-7890</p>
             </div>
             <div className={Style.contactus_box_box_left_item}>
               <h3>🌏 SOCIALS</h3>
-              <a href="https://m.facebook.com/#!/TuPublish/?tsid=0.584001426281142&source=result">
+              <a href="#">
                 <TiSocialFacebook />
               </a>
-              <a href="https://www.linkedin.com/company/tupublish/">
+              <a href="#">
                 <TiSocialLinkedin />
               </a>
-              <a href="https://twitter.com/paytusker">
+              <a href="#">
                 <TiSocialInstagram />
               </a>
-              <a href="https://youtube.com/channel/UCgIsSYLJzBLOl5yRhDlwPaQ">
+              <a href="#">
                 <TiSocialYoutube />
               </a>
-              <a href="https://www.instagram.com/chaintusker/">
+              <a href="#">
                 <TiSocialTwitter />
               </a>
             </div>
@@ -61,7 +60,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="Enter your Name"
+                  placeholder="shoaib bhai"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>

@@ -52,25 +52,18 @@ import provider4 from "./provider-4.png";
 import founder1 from "./founder1.jpg";
 import founder2 from "./founder2.jpg";
 import founder3 from "./founder3.jpg";
-import founder5 from "./founder4.jpg";
+import founder4 from "./founder4.jpg";
 import loader from "./loadergif.gif";
 import errorgif from "./error.gif";
-
-
-import newprofileuser from "./user-circle-regular.svg";
-import nftstudio from "./studio.png";
-import nftphoto from "./nftphoto.png";
-import homehreo from "./home_hreo.png";
-
-// nftphoto.png
-
+import transfer from "./transfer.gif";
+import transferEther from "./ethereTransfer.gif";
 
 export default {
   hero2,
   founder1,
   founder2,
   founder3,
-  founder5,
+  founder4,
   provider1,
   provider2,
   provider3,
@@ -123,11 +116,6 @@ export default {
   zgcmq,
   loader,
   errorgif,
-  newprofileuser,
-  nftstudio,
-  nftphoto,
-  homehreo,
-
-
-  
+  transfer,
+  transferEther,
 };

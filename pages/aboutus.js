@@ -9,24 +9,39 @@ import images from "../img";
 const aboutus = () => {
   const founderArray = [
     {
-      name: "Tapiwa",
+      name: "Niamh O'Shea",
       position: "Co-founder and Chief Executive",
       images: images.founder1,
+    },
+    {
+      name: "Danien Jame",
+      position: "Co-founder and Chief Executive",
+      images: images.founder2,
+    },
+    {
+      name: "Orla Dwyer",
+      position: "Co-founder, Chairman",
+      images: images.founder3,
+    },
+    {
+      name: "Dara Frazier",
+      position: "Co-Founder, Chief Strategy Officer",
+      images: images.founder4,
     },
   ];
 
   const factsArray = [
     {
-      title: "1 million",
-      info: "Articles have been public around the world (as of Oct. 12, 2022)",
+      title: "10 million",
+      info: "Articles have been public around the world (as of Sept. 30, 2021)",
     },
     {
-      title: "1000",
-      info: "Registered users account (as of Oct. 12, 2022)",
+      title: "100,000",
+      info: "Registered users account (as of Sept. 30, 2021)",
     },
     {
-      title: "3+",
-      info: "Countries and regions have our presence (as of Oct. 12, 2022",
+      title: "220+",
+      info: "Countries and regions have our presence (as of Sept. 30, 2021",
     },
   ];
   return (
@@ -42,7 +57,7 @@ const aboutus = () => {
             </p>
           </div>
           <div className={Style.aboutus_box_hero_right}>
-            <Image src={images.nftphoto} />
+            <Image src={images.hero2} />
           </div>
         </div>
 
@@ -90,7 +105,6 @@ const aboutus = () => {
             ))}
           </div>
         </div>
-        
       </div>
       <Brand />
     </div>

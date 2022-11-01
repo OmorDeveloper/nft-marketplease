@@ -76,13 +76,13 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="Enter Item Name"
+            placeholder="shoaib bhai"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
 
-        {/* <div className={formStyle.Form_box_input}>
+        <div className={formStyle.Form_box_input}>
           <label htmlFor="website">Website</label>
           <div className={formStyle.Form_box_input_box}>
             <div className={formStyle.Form_box_input_box_icon}>
@@ -101,7 +101,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
             so that users can click to learn more about it. You are welcome to
             link to your own webpage with more details.
           </p>
-        </div> */}
+        </div>
 
         <div className={formStyle.Form_box_input}>
           <label htmlFor="description">Description</label>
@@ -119,7 +119,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
           </p>
         </div>
 
-        {/* <div className={formStyle.Form_box_input}>
+        <div className={formStyle.Form_box_input}>
           <label htmlFor="name">Choose collection</label>
           <p className={Style.upload_box_input_para}>
             Choose an exiting collection or create a new one
@@ -152,12 +152,10 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
         <div className={formStyle.Form_box_input_social}>
-
-
-          {/* <div className={formStyle.Form_box_input}>
+          <div className={formStyle.Form_box_input}>
             <label htmlFor="Royalties">Royalties</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
@@ -169,9 +167,8 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
                 onChange={(e) => setRoyalties(e.target.value)}
               />
             </div>
-          </div> */}
-
-          {/* <div className={formStyle.Form_box_input}>
+          </div>
+          <div className={formStyle.Form_box_input}>
             <label htmlFor="size">Size</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
@@ -183,9 +180,8 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
                 onChange={(e) => setFileSize(e.target.value)}
               />
             </div>
-          </div> */}
-
-          {/* <div className={formStyle.Form_box_input}>
+          </div>
+          <div className={formStyle.Form_box_input}>
             <label htmlFor="Propertie">Propertie</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
@@ -197,7 +193,7 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
                 onChange={(e) => setProperties(e.target.value)}
               />
             </div>
-          </div> */}
+          </div>
 
           <div className={formStyle.Form_box_input}>
             <label htmlFor="Price">Price</label>
@@ -233,12 +229,11 @@ const UloadNFT = ({ uploadToIPFS, createNFT }) => {
             }
             classStyle={Style.upload_box_btn_style}
           />
-          {/* <Button
+          <Button
             btnName="Preview"
             handleClick={() => {}}
             classStyle={Style.upload_box_btn_style}
-          /> */}
-
+          />
         </div>
       </div>
     </div>

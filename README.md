@@ -10,12 +10,4 @@ npx hardhat test
 REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat run scripts/deploy.js
-
-
-npx hardhat run --network localhost scripts/deploy.js
-
-
-npx hardhat run --network polygon_mumbai scripts/deploy.js
-
-
 ```

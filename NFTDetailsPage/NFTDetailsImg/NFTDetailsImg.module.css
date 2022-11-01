@@ -54,19 +54,16 @@
     padding-inline: 1rem;
     cursor: pointer;
     margin-top: 1rem;
-    color: black;
+    color: var( --shadow-dark-color);
 }
 
 .NFTDetailsImg_box_details_box,
 .NFTDetailsImg_box_description_box{
-    color: black;
     padding: .1rem 1rem;
     font-size: 1rem;
 }
 
 .NFTDetailsImg_box_details_box p{
-    color: black;
-
     line-height: 1;
     font-size: 1rem;
 }

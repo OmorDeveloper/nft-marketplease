@@ -25,63 +25,65 @@ import { getTopCreators } from "../TopCreators/TopCreators";
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {
-  const { checkIfWalletConnected } = useContext(NFTMarketplaceContext);
+  const { checkIfWalletConnected, currentAccount } = useContext(
+    NFTMarketplaceContext
+  );
   useEffect(() => {
     checkIfWalletConnected();
   }, []);
 
-  const { fetchNFTs, currentAccount } = useContext(NFTMarketplaceContext);
+  const { fetchNFTs } = useContext(NFTMarketplaceContext);
   const [nfts, setNfts] = useState([]);
   const [nftsCopy, setNftsCopy] = useState([]);
 
   useEffect(() => {
-    if(currentAccount) {
+    if (currentAccount) {
       fetchNFTs().then((items) => {
         setNfts(items.reverse());
         setNftsCopy(items);
+        console.log(nfts);
       });
     }
-   
   }, []);
 
   //CREATOR LIST
+
   const creators = getTopCreators(nfts);
-  console.log(creators);
+  // console.log(creators);
 
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-     
-      
-      
-      
-      <Title
-        heading="Featured NFTs"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
-     
-      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      <BigNFTSilder />
       <Title
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-            {nfts.length == 5 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      <AudioLive />
+      {creators.length == 0 ? (
+        <Loader />
+      ) : (
+        <FollowerTab TopCreator={creators} />
+      )}
 
-     
-       <Title
-        heading="PDF Collection"
+      <Slider />
+      <Collection />
+      <Title
+        heading="Featured NFTs"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-            {nfts.length == 5 ? <Loader /> : <NFTCard NFTData={nfts} />}
-            <Title
-        heading="🎬 Videos Collection"
-        paragraph="
-Check out our hottest videos. View more and share more new perspectives on just about any topic. Everyone’s welcome."
+      <Filter />
+      {nfts.length == 0 ? <Loader /> : <NFTCard NFTData={nfts} />}
+
+      <Title
+        heading="Browse by category"
+        paragraph="Explore the NFTs in the most featured categories."
       />
-            {nfts.length == 5 ? <Loader /> : <NFTCard NFTData={nfts} />}
+      <Category />
+      <Subscribe />
       <Brand />
-      
+      <Video />
     </div>
   );
 };

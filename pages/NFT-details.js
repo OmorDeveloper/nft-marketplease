@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useRouter } from "next/router";
 
 //INTERNAL IMPORT
@@ -28,7 +28,8 @@ const NFTDetails = () => {
   return (
     <div>
       <NFTDetailsPage nft={nft} />
- 
+      <Category />
+      <Brand />
     </div>
   );
 };
